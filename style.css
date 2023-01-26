@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+ }
+
+ @font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 800;
+ }
+
+@font-face {
+   font-family: "Inter";
+   src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+   font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFDFA;
+    z-index: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+header{
+    z-index: 1;
+}
+
+Header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+Header .container .desktop_nav{
+    display: none;
+    
+}
+
+
+Header .container .desktop_nav ul{
+    list-style: none;
+    display: flex;
+}
+
+Header .container .desktop_nav ul a{
+    color: black;
+    text-decoration: none;
+}
+
+Header .container .desktop_nav ul li{
+    margin: 0 10px;
+   
+}
+
+.menu-btn{
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+    z-index: 999;
+}
+
+.menu .mobile_nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background-color: #ccc;
+    padding: 20px 30px;
+
+}
+
+.menu .opacity{
+    width: 30vw;
+    height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.menu .mobile_nav img{
+ width: 30px;
+ align-self: flex-end;
+ cursor: pointer;
+}
+
+.menu .mobile_nav ul{
+    list-style: none;
+    margin-top: 50px;
+}
+
+.menu .mobile_nav ul li{
+    margin: 20px 0;
+}
+
+.menu .mobile_nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+Section.noticias .popular{
+    width: 100%;
+}
+
+section.noticias .popular img{
+    width: 100%;
+}
+
+section.noticias .popular h1{
+    padding: 10px 0;
+    font-size: 40px;
+}
+
+section.noticias .popular p{
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.noticias .popular .button{
+    background-color: #F15E50;
+    color: white;
+    text-decoration: none;
+    display: table;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+section.noticias .popular .button:hover{
+    background-color: #00001A;
+    
+}
