@@ -160,7 +160,7 @@ Header .container .desktop_nav ul li {
 /* Popular */
 Section.noticias .popular {
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -222,7 +222,7 @@ section.noticias .novos {
     padding: 15px;
     width: 100%;
     display: block;
-    max-width: 440px;
+    max-width: 350px;
     margin: 0 auto;
     align-self: flex-start;
 }
