@@ -1,3 +1,5 @@
+/* Fonte */
+
 @font-face {
     font-family: "Inter";
     src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -21,7 +23,9 @@
     font-weight: 400;
 }
 
+/* ------------------------------- */
 
+/* Reset css */
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +33,10 @@
     font-family: "Inter";
 }
 
+/* -------------------- */
+
+
+/* Body */
 body {
     width: 100%;
     height: 100vh;
@@ -36,6 +44,7 @@ body {
     z-index: 0;
 }
 
+/* Conteainer */
 .container {
     max-width: 1500px;
     width: 100%;
@@ -44,6 +53,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+/* -------------------- */
+
+/* Header */
 
 header {
     z-index: 1;
@@ -54,6 +66,8 @@ Header .container {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Nav desktop */
 
 Header .container .desktop_nav {
     display: none;
@@ -76,6 +90,10 @@ Header .container .desktop_nav ul li {
 
 }
 
+/* ---------------------------------- */
+
+
+/* Menu mobile */
 .menu-btn {
     cursor: pointer;
 }
@@ -129,7 +147,17 @@ Header .container .desktop_nav ul li {
     font-weight: 400;
 }
 
+/* ------------------------------------------------------- */
 
+/* Hover */
+
+.menu .mobile_nav ul li a:hover, .desktop_nav ul li a:hover{
+    color: #F15E50;
+}
+
+/* -------------------------------------------------------- */
+
+/* Popular */
 Section.noticias .popular {
     width: 100%;
     max-width: 600px;
@@ -178,15 +206,20 @@ section.noticias .popular .button {
     transition: 0.3s;
 }
 
+/* Hover */
+
 section.noticias .popular .button:hover {
     background-color: #00001A;
 
 }
 
+/* ---------------------------------------------------- */
+
+
+/* Novos */
 section.noticias .novos {
     background-color: #000019;
     padding: 15px;
-
     width: 100%;
     display: block;
     max-width: 440px;
@@ -203,12 +236,17 @@ section.noticias .novos .nova_noticia h4 {
     color: #fffdfa;
 }
 
+section.noticias .novos .nova_noticia h4:hover{
+    color: #e9ab53;
+    cursor: pointer;
+}
+
 section.noticias .novos .nova_noticia p {
     color: #c5c6ce;
 }
 
 section.noticias .novos .nova_noticia:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 section.noticias .novos .nova_noticia:not(:last-child)::after {
@@ -217,9 +255,13 @@ section.noticias .novos .nova_noticia:not(:last-child)::after {
     width: 100%;
     height: 2px;
     background-color: #c5c6ce;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
+/* -------------------------------------------------------- */
+
+
+/* Noticias */
 .noticias {
     width: 100%;
     display: flex;
@@ -245,11 +287,21 @@ section.noticias .novos .nova_noticia:not(:last-child)::after {
     color: #c5c6ce;
 }
 
+
+
 .noticias .noticia_single .info h5 {
     font-weight: bold;
 }
 
+.noticias .noticia_single .info h5:hover{
+    color: #F15E50;
+    cursor: pointer;
+}
 
+/* -------------------------------------------------------- */
+
+
+/* Media Screen 720px */
 @media screen and (min-width: 720px) {
     section.noticias .popular h1 {
         padding: 10px 0;
@@ -262,7 +314,9 @@ section.noticias .novos .nova_noticia:not(:last-child)::after {
     }
 }
 
+/* -------------------------------------------------------- */
 
+/* Media screen 1024px */
 
 @media screen and (min-width: 1024px) {
     Header .container .desktop_nav {

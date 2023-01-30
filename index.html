@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -15,21 +15,28 @@
 
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
+  <!-- Header -->
   <Header>
+    <!-- Contaienr -->
     <div class="container">
+      <!-- Logo -->
       <img src="assets/images/logo.svg" alt="" class="logo">
-
+      <!-- Botão do menu -->
       <img src="assets/images/icon-menu.svg" class="menu-btn" alt="">
+
+      <!-- Menu mobile -->
       <div class="menu">
+        <!-- Opacidade do menu -->
         <div class="opacity"></div>
+        <!-- Nav do menu -->
         <nav class="mobile_nav">
+          <!-- Botão de fechar o menu -->
           <img src="assets/images/icon-menu-close.svg" class="close" alt="">
           <ul>
             <li><a href="">Home</a></li>
@@ -39,8 +46,11 @@
             <li><a href="">Categories</a></li>
           </ul>
         </nav>
+        <!-- Fim nav do menu -->
       </div>
+      <!-- Fim menu mobile -->
 
+      <!-- Nav desktop -->
       <nav class="desktop_nav">
         <ul>
           <li><a href="">Home</a></li>
@@ -52,81 +62,133 @@
       </nav>
 
     </div>
+    <!-- Fim container -->
   </Header>
+  <!-- Fim Header -->
 
+  <!-- Sessão Noticias -->
   <Section class="noticias">
+    <!-- Container -->
     <div class="container">
+
+      <!-- Popular -->
       <div class="popular">
+        <!-- Foto banner -->
         <picture>
-          <source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 720px)" >
+          <source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 720px)">
           <img src="assets/images/image-web-3-mobile.jpg" alt="Capa do Instalura">
-      </picture>
+        </picture>
+
+        <!-- Infos popular -->
         <div class="infos">
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div class="wrap">
-        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
-          of the people.
-          But is it really fulfilling its promise?</p>
+          <!-- Titulo -->
+          <h1>The Bright Future of Web 3.0?</h1>
 
-        <a href="" class="button">Read more</a>
-      </div>
+          <!-- Wrap -->
+          <div class="wrap">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands
+              of the people.
+              But is it really fulfilling its promise?</p>
+
+            <a href="" class="button">Read more</a>
+          </div>
+          <!-- Fim wrap -->
         </div>
+        <!-- fim infos popular -->
       </div>
+      <!-- Fim popular -->
 
+      <!-- Novas Noticias -->
       <div class="novos">
         <h3>New</h3>
+
+        <!-- Noticia -->
         <div class="nova_noticia">
           <h4 class="titulo">Hydrogen VS Electric Cars</h4>
           <p class="resumo">Will hydrogen-fueled cars ever catch up to EVs?</p>
-
         </div>
+        <!-- Fim noticia -->
+
+        <!-- Noticia -->
         <div class="nova_noticia">
           <h4 class="titulo">The Downsides of AI Artistry</h4>
           <p class="resumo">What are the possible adverse effects of on-demand AI image generation?</p>
-
         </div>
+        <!-- Fim noticia -->
+
+        <!-- Noticia -->
         <div class="nova_noticia">
           <h4 class="titulo">Is VC Funding Drying Up?</h4>
           <p class="resumo">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-
         </div>
+        <!-- Fim noticia -->
       </div>
-
+      <!-- Fim novas noticias -->
+      
+      <!-- Noticias -->
       <div class="noticias">
+
+        <!-- Noticia -->
         <div class="noticia_single">
+          <!-- img noticia -->
           <img src="assets/images/image-retro-pcs.jpg" alt="">
+          
+          <!-- infos -->
           <div class="info">
             <h3>01</h3>
             <h5>Reviving Retro PCs</h5>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
-        </div>
+          <!-- fim infos -->
 
+        </div>
+        <!-- Fim noticia -->
+
+        <!-- Noticia -->
         <div class="noticia_single">
+          <!-- img noticia -->
           <img src="assets/images/image-top-laptops.jpg" alt="">
+
+          <!-- infos -->
           <div class="info">
             <h3>02</h3>
             <h5>Top 10 Laptops of 2022</h5>
             <p>Our best picks for various needs and budgets.</p>
           </div>
-        </div>
+          <!-- fim infos -->
 
+        </div>
+        <!-- Fim noticia -->
+
+        <!-- Noticia -->
         <div class="noticia_single">
+          <!-- img noticia -->
           <img src="assets/images/image-gaming-growth.jpg" alt="">
+
+          <!-- infos -->
           <div class="info">
             <h3>03</h3>
             <h5>The Growth of Gaming</h5>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
+          <!-- fim infos -->
+
         </div>
+        <!-- Fim noticia -->
+
       </div>
-
+      <!-- Noticias -->
     </div>
+    <!-- Fim container -->
   </Section>
+  <!-- Fim sessão noticias -->
 
+
+<!-- Bibliografia -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Lucas Tymoschenko</a>.
+    Coded by <a href="https://github.com/LuTymos/News-homepage">Lucas Tymoschenko</a>.
   </div>
 
 
@@ -140,17 +202,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    <script src="assets/jquery-3.6.1.min.js"></script>
+    <!-- //FIm bootstrap -->
 
-    <script>
-      $(".menu-btn").on( "click", function() {
-        $(".menu").show()
-});
-      $('.close').on("click", function(){
-        $('.menu').hide()
-      })
+    <!-- Jquery -->
+  <script src="assets/jquery-3.6.1.min.js"></script>
 
-    </script>
+  <script>
+    $(".menu-btn").on("click", function () {
+      $(".menu").show()
+    });
+    $('.close').on("click", function () {
+      $('.menu').hide()
+    })
+
+  </script>
+  <!-- Fim Jquery -->
 </body>
 
 </html>
