@@ -106,7 +106,7 @@ Header .container .desktop_nav ul li {
 .menu .mobile_nav {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 70vw;
@@ -120,7 +120,7 @@ Header .container .desktop_nav ul li {
     width: 30vw;
     height: 100vh;
     background-color: #000000;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     opacity: 0.7;
@@ -274,12 +274,13 @@ section.noticias .novos .nova_noticia:not(:last-child)::after {
     width: 100%;
     max-width: 370px;
     display: flex;
-    height: 120px;
-    margin: 20px auto;
+    height: fit-content;
+    margin: 30px auto;
 }
 
 .noticias .noticia_single img {
-    width: 100px;
+    max-width: 100px;
+    max-height: 120px;
     margin-right: 40px;
 }
 
